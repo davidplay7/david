@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+
+<script type="text/javascript">
+//Objetos
+//Date
+//ao definir a variavel -> new Date()
+var dia = new Date()
+//criar variavel -> objeto caracteristicas de Date
+var hora = dia.getHours();
+var minutos  =  dia.getMinutes()
+//var hora pegue o objeto dia e dentro de dia, selecione as horas
+//document.write(hora);
+
+//encadeamento
+if(hora<=12){
+    document.write("Bom Dia")
+    alert(hora + ":" + minutos)
+}else if(hora>12 & hora <=18){
+    document.write("Boa Tarde")
+}else if(hora>18){
+   document.write("Boa Noite")
+}else{
+    document.write("Fim do mundo")
+}
+
+/*
+Obtém a data/hora atual
+var data = new Date();
+
+Guarda cada pedaço em uma variável
+var dia     = data.getDate();           // 1-31
+var dia_sem = data.getDay();            // 0-6 (zero=domingo)
+var mes     = data.getMonth();          // 0-11 (zero=janeiro)
+var ano2    = data.getYear();           // 2 dígitos
+var ano4    = data.getFullYear();       // 4 dígitos
+var hora    = data.getHours();          // 0-23
+var min     = data.getMinutes();        // 0-59
+var seg     = data.getSeconds();        // 0-59
+var mseg    = data.getMilliseconds();   // 0-999
+var tz      = data.getTimezoneOffset(); // em minutos
+
+*/
+
+
+</script>
+
+<title>Javascript - Date()</title>
+</head>
+<body>
+
+
+</body>
+</html>

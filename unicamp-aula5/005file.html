@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Banner Rotativo</title>
+
+<script type="text/javascript">
+//declaracao de variaveis
+var citacao = [];
+citacao[0]="Por fora bela viola por dentro pao bolorento";
+citacao[1]="Nao chore pelo leite derramado";
+citacao[2]="Sigam-me os bons";
+citacao[3]="Cao que ladra nao morde";
+citacao[4]="O importante não é ganhar, o importante é competir";
+//alert(citacao[2]);
+
+var contador = 0;
+
+
+//funcoes
+function exibeTexto(){
+//camel case
+document.getElementById("texto").innerHTML =  citacao[contador];
+//auto incrementar o contador
+contador++
+//limitador
+if(contador == citacao.length){
+contador = 0
+}
+//temporizacao
+//funcoes intrinsecas -> elas vem o javascript
+setTimeout("exibeTexto()",1000);
+}//fim da funcao exibeTexto()
+
+</script>
+
+</head>
+
+<body onLoad="exibeTexto();">
+<h1>Citações</h1>
+<div id="texto">Gabriel</div>
+<!--<button onclick="exibeTexto()">+1</button>-->
+</body>
+</html>

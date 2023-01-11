@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="iso-8859-1">
+	
+	<!-- insercao jQuery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+<title>jQuery</title>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    
+<style type="text/css">
+		#clique{
+            font-family: 'Open Sans', sans-serif;
+            border-radius: 0.3em;
+            padding: 1em;
+            text-align: center;
+			border:solid 0.18em #e27a3f;
+			background-color:#efc94c;
+			width:9em;
+			cursor:pointer;
+		}
+		#clique:hover{
+			border:solid 0.18em #334d5c;
+            background-color:#45b29d;
+            color: #fff;
+		}
+		img, #moldura{
+			display:none;
+		}
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $('#clique').click(function(){
+		$('img').fadeToggle('slow');
+		$('#moldura').slideToggle('slow');
+		});//fim de $('#clique').click()
+});//fim de $(document).ready()
+
+</script>
+	
+</head>
+
+<body>
+	<div id="clique">
+	Use a Força!
+	</div>
+	
+	<figure id="moldura">
+	<img src="imagens/js-logo.png" alt="logotipo da linguagem JavaScript com as iniciais JS escritas em preto sobre fundo amarelo" title="logo JavaScript - JS" />
+	</figure>
+</body>
+	
+</html>

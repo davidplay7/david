@@ -1,0 +1,93 @@
+<DOCTYPE! html>
+<html lang="pt-BR">
+<head>
+<title>Lançador de Dados</title>
+<meta charset="utf-8"/>
+<script type="text/javascript" src="dados_rpg.js"></script>
+<link rel="stylesheet" href="dados_rpg.css" type="text/css" />
+</head>
+
+<body>
+<main>
+	
+<div class="espacador"></div>
+
+<div class="espacador direita"></div>
+<div class="espacador direita">Resultado dos Lançamentos</div>
+<div class="espacador direita">Modificador</div>
+<div class="espacador direita">Número de Dados</div>
+	
+<form method="get" action="dados_rpg.html" name="formDados" enctype="multipart/form-data">
+
+<!-- d4 -->
+<div class="dado">
+	<img onClick="lancarD4()" src="imagens/d4.png"  alt="d4" name="d4" />
+	<input type="button" onclick="lancarD4()" alt="Lançar d4" name="r4" value="lançar" />
+	<input type="text" readonly name="d4r" size="5" maxlength="5" />
+	<input type="text" name="d4Mod" size="3" maxlength="3" value="0" />
+	<input type="text" name="d4Num" size="3" maxlength="3" value="1" />
+</div>	
+
+<!-- d6 -->	
+<div class="dado">
+	<img onClick="lancarD6()" src="imagens/d6.png"  alt="d6" name="d6" />
+	<input type="button" onclick="lancarD6()" alt="Lançar d6" name="r6" value="lançar" />
+	<input type="text" readonly name="d6r" size="5" maxlength="5" />
+	<input type="text" name="d6Mod" size="3" maxlength="3" value="0" />
+	<input type="text" name="d6Num" size="3" maxlength="3" value="1" />
+</div>
+
+<!-- d8 -->	
+<div class="dado">
+	<img onClick="lancarD8()" src="imagens/d8.png"  alt="d8" name="d8" />
+	<input type="button" onclick="lancarD8()" alt="Lançar d8" name="r8" value="lançar" />
+	<input type="text" readonly name="d8r" size="5" maxlength="5" />
+	<input type="text" name="d8Mod" size="3" maxlength="3" value="0" />
+	<input type="text" name="d8Num" size="3" maxlength="3" value="1" />
+</div>
+	
+<!-- d10 -->	
+<div class="dado">
+	<img onClick="lancarD10()" src="imagens/d10.png"  alt="d10" name="d10" />
+	<input type="button" onclick="lancarD10()" alt="Lançar d10" name="r10" value="lançar" />
+	<input type="text" readonly name="d10r" size="5" maxlength="5" />
+	<input type="text" name="d10Mod" size="3" maxlength="3" value="0" />
+	<input type="text" name="d10Num" size="3" maxlength="3" value="1" />
+</div>	
+
+<!-- d12 -->	
+<div class="dado">
+	<img onClick="lancarD12()" src="imagens/d12.png"  alt="d12" name="d12" />
+	<input type="button" onclick="lancarD12()" alt="Lançar d12" name="r12" value="lançar" />
+	<input type="text" readonly name="d12r" size="5" maxlength="5" />
+	<input type="text" name="d12Mod" size="3" maxlength="3" value="0" />
+	<input type="text" name="d12Num" size="3" maxlength="3" value="1" />
+</div>	
+	
+<!-- d20 -->	
+<div class="dado">
+	<img onClick="lancarD20()" src="imagens/d20.png"  alt="d20" name="d20" />
+	<input type="button" onclick="lancarD20()" alt="Lançar d20" name="r20" value="lançar" />
+	<input type="text" readonly name="d20r" size="5" maxlength="5" />
+	<input type="text" name="d20Mod" size="3" maxlength="3" value="0" />
+	<input type="text" name="d20Num" size="3" maxlength="3" value="1" />
+</div>
+	
+<!-- d100 -->	
+<div class="dado">
+	<img onClick="lancarD100()" src="imagens/d100.png"  alt="d100" name="d100" />
+	<input type="button" onclick="lancarD100()" alt="Lançar d100" name="r100" value="lançar" />
+	<input type="text" readonly name="d100r" size="5" maxlength="5" />
+	<input type="text" name="d100Mod" size="3" maxlength="3" value="0" />
+	<input type="text" name="d100Num" size="3" maxlength="3" value="1" />
+</div>
+	
+<!-- retorno -->
+<div class="retorno">
+	<textarea name="RelatorioDeResultados" readonly></textarea>
+</div>
+		
+</form>
+</main>
+</body>
+</html>

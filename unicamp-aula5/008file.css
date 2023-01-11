@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+#quadrado{
+	background-color:#09F;
+	width:90px;
+	height:90px;
+	cursor:pointer;
+	}

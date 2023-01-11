@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Banner Rotativo</title>
+
+<script type="text/javascript">
+//declaracao de variaveis
+var banners = ["http://www.flatschart.com/fotos/fabio_flatschart.jpg","http://www.dynaclic.be/images/slides/javascript.png","https://lh6.googleusercontent.com/-IS7UqdHw5yQ/AAAAAAAAAAI/AAAAAAAAJ28/4Lobp4sENIM/photo.png"];
+var alternativo = ["texto 1","texto 2","texto 3"];
+var titulo = ["parangaricotirimirruaro","titulo 2","algum title"];
+
+//
+var contador = 0;
+
+
+//functions
+function rotativo(){
+//nesta linha endereco da imagem
+document.images[0].src = banners[contador];
+//o alt da imagem
+document.images[0].alt = alternativo[contador];
+//title das imagens
+document.images[0].title = titulo[contador];
+//
+contador++
+//document.write(contador);
+//
+if(contador == banners.length){
+contador = 0
+}
+//contador de tempo -> timer
+setTimeout("rotativo()",5000)
+}
+
+
+</script>
+
+</head>
+
+<body onLoad="rotativo()">
+<img/>
+
+</body>
+</html>
